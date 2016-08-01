@@ -31,7 +31,7 @@ class C(inkex.Effect):
     for id,node in self.selected.iteritems():
       walk(node)
     msg = "Empty result"
-    if len(pallete) > 0:
+    if len(palette) > 0:
       for clr in palette:
         lgSwatch = inkex.etree.SubElement(defs,inkex.addNS('linearGradient','svg'))
         lgSwatch.set('id','sw' + clr)
